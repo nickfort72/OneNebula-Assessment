@@ -12,12 +12,13 @@ The ERD appears to be in 1NF as all rows are unique and atomic, however there ar
 
 <h2>Question 2</h2>
 
-select Movies.Genre, SUM(Tickets.TicketID) AS 'Tickets sold in December'
-from Tickets
-inner join Movies
-on Tickets.MovieID = Movies.MovieID
-where Tickets.Month='December'
-group by Genre;
+SELECT Movies.Genre, SUM(Tickets.TicketID) AS 'Tickets sold in December'
+FROM Tickets
+INNER JOIN Movies
+ON Tickets.MovieID = Movies.MovieID
+WHERE Tickets.Month='December'
+GROUP BY Genre;
+
 
 <h1>Back-end Code Challenges</h1>
 <h2>Question 1</h2>
