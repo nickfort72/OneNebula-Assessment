@@ -76,16 +76,16 @@ GROUP BY Genre;
 
 <h1>Front end code challenges</h1>
  <h2>question 1</h2>
-1)
-The firstDiv would be red, the secondDiv would be orange. 
+ 
+1)<br>The firstDiv would be red, the secondDiv would be orange. 
 
-2) 
+2)<br>
 <script>
 var firstDiv = document.getElementById("firstDiv");
 firstDiv.style.backgroundColor = 'pink';
 </script>
 
-3)
+3)<br>
  <script>
 var secondDiv = document.getElementById("secondDiv");
 secondDiv.classList.add("yellow-card");
