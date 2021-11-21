@@ -95,6 +95,7 @@ secondDiv.classList.add("yellow-card");
 
 1 )
 The function will be parsed correctly because javascript supports method overriding. The value of x will remain the same.
+<br>
 2 )
 You could use a different variable name and make it equal to x, for example: var legalValue = x; or you could use: this.x = x; and colsole.log(this); 
 You could also log the value of x at the end of the function to prevent confusion if the value of x changes after logging.  
