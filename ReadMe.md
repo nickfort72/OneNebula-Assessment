@@ -66,7 +66,6 @@ GROUP BY Genre;
     class Sheep : Animal
     {
      
-
        public override string MakeNoise()
         {
             return "Baaah";
