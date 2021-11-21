@@ -12,19 +12,18 @@ The ERD appears to be in 1NF as all rows are unique and atomic, however there ar
 
 <h2>Question 2</h2>
 
-SELECT Movies.Genre, SUM(Tickets.TicketID) AS 'Tickets sold in December'
-FROM Tickets
-INNER JOIN Movies
-ON Tickets.MovieID = Movies.MovieID
-WHERE Tickets.Month='December'
-GROUP BY Genre;
-
+SELECT Movies.Genre, SUM(Tickets.TicketID) AS 'Tickets sold in December'   
+FROM Tickets  
+INNER JOIN Movies  
+ON Tickets.MovieID = Movies.MovieID  
+WHERE Tickets.Month='December' AND Tickets.Year='2020'  
+GROUP BY Genre;  
 
 <h1>Back-end Code Challenges</h1>
 <h2>Question 1</h2>
 
-static void PrintIfMultiple(string input)
-{
+    static void PrintIfMultiple(string input)
+    {
 	if (input.Length % 2 == 0 && input.Length % 4 == 0)
         {
             Console.WriteLine("Stack Overflow!");
@@ -36,12 +35,13 @@ static void PrintIfMultiple(string input)
         else if ( input.Length % 4 == 0)
         {
             Console.WriteLine("Overflow");
-        }           
-}
- 
+        }
+	}
+
+
 <h2>Question 2</h2>
 
-public class Animal
+        public class Animal
     {
         public string Eat()
         {
@@ -72,7 +72,9 @@ public class Animal
             return "Baaah";
         }
     }
- 
+
+
+
 <h1>Front end code challenges</h1>
  <h2>question 1</h2>
 1)
